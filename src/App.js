@@ -7,6 +7,7 @@ import Semester from './components/Semester/Semester.js';
 import SemesterButton from './components/SemesterButton';
 import SemiCircleProgressBar from './components/SemiCircleProgressBar';
 import { CourseObject, calculateCGPA } from './utils';
+import Header from "./components/Header/Header";
 
 
 
@@ -155,12 +156,16 @@ function App() {
   const results = calculateCGPA(semesters);
 
   return (
+      
     <>
+      <Header />
+      <div className="content flex flex-col grow p-3 px-7 gap-1 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-200 min-h-screen">
+        {/* Rest of your app */}
     {/* Ads Banner */}
     {/* <div className="w-full">
       
     </div> */}
-    <div className='content flex flex-col grow p-3 px-7 gap-1'>
+
       {/* Header */}
       <span className='content__header mb-2 border-b-4 border-indigo-500 self-start pb-3'>GPA CALCULATOR</span>
 
