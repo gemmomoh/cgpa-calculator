@@ -1,2 +1,2 @@
 # A simple 5 point CGPA calculator
-created when I was bored
+updated when I was bored to fix the issues of the OG
